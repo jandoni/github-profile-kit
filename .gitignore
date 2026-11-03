@@ -1,0 +1,8 @@
+# Build output: the workflow writes dist/ and publishes it to the output branch.
+dist/
+__pycache__/
+# Personal config stays local. In your own profile repo, delete this line and
+# commit profile.json: the daily workflow reads the terminal and snake settings from it.
+profile.json
+# Font files are embedded into the cards at build time; keep the files themselves out.
+*.woff2

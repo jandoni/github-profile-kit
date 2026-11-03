@@ -1,0 +1,137 @@
+{
+  "github_username": "jandoni",
+
+  "palette": {
+    "ink": "#111111",
+    "accent": "#8a4f28",
+    "muted": "#5f5a54",
+    "on_accent": "#ffffff",
+    "paper": "#f4f1ec",
+    "header": {
+      "paper_gradient": ["#e8e5e1", "#dfddd7"],
+      "photo_fade": "#e3e0dc"
+    },
+    "terminal": {
+      "border": "#d8d2c8",
+      "title_bar": "#ebe6de",
+      "output": "#4a453f",
+      "title": "#6b655e"
+    },
+    "cards": {
+      "background": "#1c1b1f",
+      "border": "#2e2d33",
+      "title": "#f3efe8",
+      "body": "#c6c0b6",
+      "label": "#c8895a",
+      "pill": "#efe8dc",
+      "pill_text": "#1c1b1f",
+      "panel": "#2a2421",
+      "panel_note": "#8f877c"
+    },
+    "snake": {
+      "light": {"snake": "#8a4f28", "dots": ["#ebe7e1", "#e3c5aa", "#cf9b70", "#ad6c3d", "#7d4421"]},
+      "dark": {"snake": "#c08250", "dots": ["#1c2128", "#4a3020", "#7d4421", "#ad6c3d", "#c08250"]}
+    }
+  },
+
+  "fonts": {
+    "sans": {"family": "Geist", "file": "~/Projects/portfolio/assets/fonts/geist-latin-wght-normal.woff2"},
+    "mono": {"family": "Geist Mono", "file": "~/Projects/portfolio/assets/fonts/geist-mono-latin-wght-normal.woff2"}
+  },
+
+  "header": {
+    "file": "header-tpm",
+    "link": "https://www.linkedin.com/in/jon-andoni-baranda/",
+    "headline": [
+      [{"text": "Building cloud and"}, {"text": "AI products", "color": "accent"}],
+      [{"text": "people"}, {"text": "actually", "italic": true}, {"text": "use."}]
+    ],
+    "title": "Technical Program Manager, Cloud Reliability",
+    "photo": {
+      "path": "~/Desktop/linkedin-banners/final-upload/linkedin-banner-4-skyline.png",
+      "crop": [2120, 0, 3168, 792],
+      "width": 344
+    }
+  },
+
+  "buttons": [
+    {"file": "linkedin", "label": "LinkedIn", "icon": "linkedin", "url": "https://www.linkedin.com/in/jon-andoni-baranda/"},
+    {"file": "scholar", "label": "Google Scholar", "icon": "scholar", "url": "https://scholar.google.com/citations?user=bZPQs6kAAAAJ"},
+    {"file": "github-projects", "label": "Projects", "icon": "github", "url": "https://github.com/jandoni?tab=repositories&type=source"},
+    {"file": "website", "label": "jonandonibaranda.com", "icon": "globe", "url": "https://jonandonibaranda.com", "hidden": true}
+  ],
+
+  "terminal": {
+    "window_title": "jon@chicago: ~",
+    "prompt": "jon@chicago ~ $ ",
+    "contributions": {
+      "command": "contributions --last-year",
+      "caption": "Each square is a day of GitHub contributions."
+    },
+    "tools_command": "tools",
+    "tools": [
+      {"slug": "python", "name": "Python"},
+      {"slug": "typescript", "name": "TypeScript"},
+      {"slug": "kubernetes", "name": "Kubernetes"},
+      {"slug": "terraform", "name": "Terraform"},
+      {"slug": "docker", "name": "Docker"},
+      {"slug": "googlecloud", "name": "Google Cloud"},
+      {"slug": "postgresql", "name": "PostgreSQL"},
+      {"slug": "apacheairflow", "name": "Airflow"},
+      {"slug": "apachespark", "name": "Spark"},
+      {"slug": "prometheus", "name": "Prometheus"},
+      {"slug": "grafana", "name": "Grafana"},
+      {"slug": "onnx", "name": "ONNX"},
+      {"slug": "homeassistant", "name": "Home Assistant"},
+      {"slug": "proxmox", "name": "Proxmox"}
+    ],
+    "link": "https://github.com/jandoni?tab=repositories",
+    "alt": "Terminal: this year's GitHub contributions as a copper snake animation, each square a day of contributions; then the tools I use: {tools}."
+  },
+
+  "cards": {
+    "heading": "Highlights",
+    "items": [
+      {
+        "file": "highlight-vigia-award",
+        "photo": "~/Projects/portfolio/assets/img/projects/vigia-award.webp",
+        "title": "First prize, Engineering Institute of Spain",
+        "body": "I created VIGÍA for the IIE's Young Engineers for a Better World competition: an AI system that detects emergencies early using existing camera infrastructure. It won first prize.",
+        "label": "Award · November 2025",
+        "button": "Read the announcement",
+        "url": "https://www.ineco.com/ineco/en/communication/news/ineco-awards-prize-second-young-engineers-better-world-competition-innovative-vigia-system",
+        "alt": "First prize, Engineering Institute of Spain: VIGÍA, an AI system that detects emergencies early using existing cameras."
+      },
+      {
+        "file": "publication-ai-rca",
+        "photo": "~/Projects/portfolio/assets/img/projects/vm-investigations.webp",
+        "title": "AI that automates root-cause analysis for VM downtime",
+        "body": "How AI and MCP turn Azure telemetry into a recovery timeline and a structured root-cause report, attached directly to the incident.",
+        "label": "Published on Microsoft's Azure blog",
+        "button": "Read the article",
+        "url": "https://techcommunity.microsoft.com/t5/azure-compute-blog/ai-powered-downtime-investigation-for-azure-vms-automating-root/ba-p/4513473",
+        "alt": "AI that automates root-cause analysis for VM downtime. Published on Microsoft's Azure blog."
+      },
+      {
+        "file": "publication-vm-recovery",
+        "photo": "~/Projects/portfolio/assets/img/projects/vm-recovery.webp",
+        "title": "Automated VM recovery that minimizes downtime",
+        "body": "A three-stage detect, diagnose and mitigate approach to recovering Azure virtual machines automatically and minimizing customer downtime.",
+        "label": "Published on Microsoft's Azure blog",
+        "button": "Read the article",
+        "url": "https://techcommunity.microsoft.com/t5/azure-compute-blog/azure-automated-virtual-machine-recovery-minimizing-downtime/ba-p/4483166",
+        "alt": "Automated VM recovery that minimizes downtime. Published on Microsoft's Azure blog."
+      },
+      {
+        "file": "publication-private-cloud",
+        "photo": "~/Projects/portfolio/assets/img/projects/openstack-cloud.webp",
+        "title": "Building an OpenStack private cloud",
+        "body": "Research on designing and building a private cloud on OpenStack, from my computer science studies at the University of the Basque Country.",
+        "label": "Research · Google Scholar",
+        "button": "Read the research",
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=bZPQs6kAAAAJ&citation_for_view=bZPQs6kAAAAJ:u-x6o8ySG0sC",
+        "alt": "Building an OpenStack private cloud. Research, Google Scholar."
+      }
+    ]
+  }
+}

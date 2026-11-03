@@ -1,0 +1,49 @@
+# Daily: Platane/snk draws the contribution snake, scripts/terminal.py nests it in
+# the terminal card with your tools, and both are published to the `output` branch.
+# The README loads https://raw.githubusercontent.com/<you>/<you>/output/terminal.svg
+# Snake colours come from palette.snake in profile.json (profile.example.json if
+# profile.json isn't committed). Only the built-in GITHUB_TOKEN is used.
+name: profile
+on:
+  schedule:
+    - cron: "23 6 * * *"   # daily, 06:23 UTC
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: read the snake colours from profile.json
+        id: snake
+        run: |
+          python - >> "$GITHUB_OUTPUT" <<'EOF'
+          import sys
+          sys.path.insert(0, "scripts")
+          from kit import load_config
+          snake = load_config()["palette"]["snake"]
+          for mode in ("light", "dark"):
+              c = snake[mode]
+              print(f"{mode}=color_snake={c['snake']}&color_dots={','.join(c['dots'])}")
+          EOF
+      - name: draw the contribution snake (light and dark)
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-light.svg?${{ steps.snake.outputs.light }}
+            dist/snake-dark.svg?${{ steps.snake.outputs.dark }}
+      - name: frame the snake and the tools in the terminal card
+        run: python scripts/terminal.py --snake dist/snake-light.svg --out dist/terminal.svg
+      - name: publish to the output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: Update contribution snake
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,41 @@
+github-profile-kit
+Copyright (c) 2026 Jon Andoni Baranda
+
+The code in this repository is under the MIT License (see LICENSE).
+It uses or refers to the following third-party work, which keeps its own terms.
+
+Platane/snk
+  https://github.com/Platane/snk
+  Draws the contribution snake. The workflow calls the published GitHub Action
+  (Platane/snk/svg-only@v3) at run time; none of its code is included or
+  redistributed here. The snk repository has no license file.
+
+crazy-max/ghaction-github-pages (MIT)
+  https://github.com/crazy-max/ghaction-github-pages
+  Publishes the workflow's output to the output branch. Called as an Action.
+
+Simple Icons (CC0 1.0)
+  https://simpleicons.org  https://github.com/simple-icons/simple-icons
+  scripts/icons.json and the Google Scholar path in scripts/buttons.py are icon
+  path data from Simple Icons 16.36.0. The icons are trademarks of their
+  respective owners; showing them doesn't imply endorsement.
+
+Geist and Geist Mono (SIL Open Font License 1.1), by Vercel
+  https://vercel.com/font  https://github.com/vercel/geist-font
+  The cards embed these fonts when you point profile.json at the font files.
+  The font files are not included in this repository. Get the variable woff2
+  files from Fontsource, for example:
+    https://cdn.jsdelivr.net/npm/@fontsource-variable/geist@5.3.0/files/geist-latin-wght-normal.woff2
+    https://cdn.jsdelivr.net/npm/@fontsource-variable/geist-mono@5.3.0/files/geist-mono-latin-wght-normal.woff2
+
+Photos
+  No photos are included. profile.example.json points at files on my own
+  machine; supply your own. The preview images in docs/ show my profile as it
+  is built from that file, and contain:
+  - a skyline photo, in the header
+  - the photo from Ineco's VIGÍA award announcement
+    https://www.ineco.com/ineco/en/communication/news/ineco-awards-prize-second-young-engineers-better-world-competition-innovative-vigia-system
+  - the header images of two Microsoft Tech Community articles, shown as link
+    thumbnails to those articles
+  - "Front of server racks at NERSC", Wikimedia Commons, CC0
+    https://commons.wikimedia.org/wiki/File:Front_of_server_racks_at_NERSC.jpg
